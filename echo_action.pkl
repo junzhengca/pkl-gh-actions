@@ -15,7 +15,7 @@ function getJob(message: String): Job = new Job {
     steps = new Listing {
         new Step {
             name = "echo step"
-            run = "message: " + message
+            run = "echo \"message: " + message + "\""
         }
     }
 }

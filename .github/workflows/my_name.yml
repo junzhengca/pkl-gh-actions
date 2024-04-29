@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: echo step
-      run: 'message: Jun Zheng'
+      run: 'echo "message: Jun Zheng"'
