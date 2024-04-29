@@ -2,7 +2,8 @@ name: Echo Action
 'on':
 - push
 jobs:
-- runs-on: ubuntu-latest
-  steps:
-  - name: echo step
-    run: 'message: hello world!'
+  hello-world:
+  - runs-on: ubuntu-latest
+    steps:
+    - name: echo step
+      run: 'message: hello world!'

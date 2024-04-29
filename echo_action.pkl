@@ -20,10 +20,12 @@ function getJob(message: String): Job = new Job {
     }
 }
 
-name: "Echo Action"
+name = "Echo Action"
 on = new Listing {
     "push"
 }
-jobs = new Listing {
-    getJob("hello world!")
+jobs = new Mapping {
+    ["hello-world"] {
+        getJob("hello world!")
+    }
 }
