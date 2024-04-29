@@ -25,7 +25,5 @@ on = new Listing {
     "push"
 }
 jobs = new Mapping {
-    ["hello-world"] {
-        getJob("hello world!")
-    }
+    ["hello-world"] = getJob("hello world!")
 }

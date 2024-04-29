@@ -5,7 +5,5 @@ import "echo_action.pkl"
 // Special amended github action job that prints my name instead of
 // hello world
 jobs = new Mapping {
-    ["hello-world"] {
-        echo_action.getJob("Jun Zheng")
-    }
+    ["hello-world"] = echo_action.getJob("Jun Zheng")
 }
