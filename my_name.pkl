@@ -1,0 +1,9 @@
+amends "echo_action.pkl"
+
+import "echo_action.pkl"
+
+// Special amended github action job that prints my name instead of
+// hello world
+jobs = new Listing {
+    echo_action.getJob("Jun Zheng")
+}

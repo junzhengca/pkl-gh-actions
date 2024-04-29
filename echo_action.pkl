@@ -1,0 +1,29 @@
+module echo_action
+
+class Job {
+    `runs-on`: String
+    steps: Listing<Step>
+}
+
+class Step {
+    name: String
+    run: String?
+}
+
+function getJob(message: String): Job = new Job {
+    `runs-on` = "ubuntu-latest"
+    steps = new Listing {
+        new Step {
+            name = "echo step"
+            run = "message: " + message
+        }
+    }
+}
+
+name: "Echo Action"
+on = new Listing {
+    "push"
+}
+jobs = new Listing {
+    getJob("hello world!")
+}
